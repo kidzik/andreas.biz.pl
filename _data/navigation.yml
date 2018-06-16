@@ -1,24 +1,12 @@
-- name: Pricing
-  link: /pricing/
+- name: Oferta
+  link: /oferta/
   new_window: false
   highlight: false
-- name: Blog
-  link: /blog/
+- name: O firmie
+  link: /o-firmie/
   new_window: false
   highlight: false
-- name: About
-  link: /about/
+- name: Kontakt
+  link: /kontakt/
   new_window: false
   highlight: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
-  new_window: true
-  highlight: true
