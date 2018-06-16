@@ -26,6 +26,10 @@ social:
 timezone: Etc/UTC
 
 collections:
+  oferta:
+    _hide_content: false
+    output: true
+    permalink: /:collection/:name
   staff_members:
     _hide_content: true
 
@@ -65,7 +69,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "contact.html"
+      path: "kontakt.html"
     values:
       full_width: true
 

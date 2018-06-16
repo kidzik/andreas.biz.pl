@@ -1,0 +1,18 @@
+---
+title: O firmie ANDREAS
+description: "Od ponad 30 lat zajmujemy się dostawami i obsługą przemysłu w zakresie kompletacji dostaw rurociągów technologiczych i procesowych.
+
+Posiadamy wieloletnie dośwaidczenie i wiedzę zdobytą w reprezentowaniu na polskim rynku światowych liderów w zakresie dostaw kompletnych systemów rurociągów z tworzyw sztucznych."
+---
+<!--p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff">
+	{% for person in site.staff_members %}
+		<li>
+			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
+			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
+			<div class="position">{{ person.position }}</div>
+		</li>
+		{% endfor %}
+	
+</ul-->
+<img style="margin-top: 2em;" src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/office.jpg" />

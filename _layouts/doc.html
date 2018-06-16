@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<style>
+page { padding: 5em; }
+section { padding: 2em; }
+nav ul {
+list-style-type: none;
+}
+nav li {
+padding-top: 0.5em;
+}
+.content ul {
+color: #666;
+line-height: 1.4em;
+font-weight: 300;
+font-size: 1.25em;
+}
+</style>
+<div class="content">
+  <section class="page">
+    <div class="container {% if page.full_width %}max-container{% endif %} sidebar-container">
+
+      <nav  class="sidebar-bar">
+	<ul>
+	  {% for item in site.oferta %}
+	  <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+	    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+	  </li>
+	  {% endfor %}
+	</ul>
+      </nav>
+
+      <section class="sidebar-content" style="padding:0">
+	<article class="content">
+	  <h2>{{ page.title }}</h2>
+	  <div>{{ content }}</div>
+	</article>
+      </section>
+
+    </div>
+  </section>
+</div>
