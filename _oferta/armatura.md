@@ -29,4 +29,4 @@ Jesteśmy przedstawicielami i partnerami w Polsce firm PRAHER, ASV STUBBE oferuj
 
 [Cennik armatura PRAHER](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-cennik-2018.pdf)
 
-[Katalog techniczny PRAHER](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-cennik.pdf)
+[Katalog techniczny PRAHER](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-katalog.pdf)
