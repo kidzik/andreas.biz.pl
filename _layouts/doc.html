@@ -16,15 +16,22 @@ font-weight: 300;
 font-size: 1.25em;
 line-height: 1.4em;
 }
-.contact {
-margin-left: 2em;
+div.contact {
+border-top: 1px rgba(2, 120, 255, 0.25) solid;
 }
 .contact p {
+  margin-left: 2em;
   font-size: 1.2em;
-  line-height: 1em;
+  line-height: 0.7em;
 }
 .content strong {
   font-weight: bold;
+}
+.contact img {
+border-radius: 50%;
+height: 6.5em; 
+width: 6.5em;
+margin-right: 1em;
 }
 </style>
 <div class="content">
@@ -46,8 +53,11 @@ margin-left: 2em;
 	  <h2>{{ page.title }}</h2>
 	  <div>{{ content }}</div>
 	  <div class="contact">
-	    <p><strong>Telefon:</strong> 692 301 340</p>
-	    <p><strong>E-mail:</strong> <a href="mailto:biuro@andreas.biz.pl">biuro@andreas.biz.pl</a></p>
+	    <h3>Skontaktuj się z nami</h3>
+	    <img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/andrzej-150.jpg" align="left"/>
+	    <p><strong style="font-size: 1.2em">Andrzej Kidziński</strong></p>
+	    <p>Telefon: <strong>692 301 340</strong></p>
+	    <p>E-mail: <strong><a href="mailto:biuro@andreas.biz.pl">biuro@andreas.biz.pl</a></strong></p>
 	  </div>
 	</article>
       </section>
