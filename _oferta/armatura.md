@@ -27,8 +27,13 @@ Jesteśmy przedstawicielami i partnerami w Polsce firm PRAHER, ASV STUBBE oferuj
 * wzierniki,
 * zawory regulacyjne oraz armaturę specjalną.
 
+<div style="text-align: center"><a href="https://www.praher-plastics.com/"><img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/praher.jpg" class="logo"></a></div>
+
 [Cennik armatura PRAHER 2020](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-cennik-2019.pdf)
 
 [Katalog techniczny PRAHER 2020](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-katalog-2019.pdf)
 
+
 Wszystkie ceny są cenami netto od których udzielamy rabatu do 40%.
+
+
