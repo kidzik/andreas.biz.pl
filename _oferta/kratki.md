@@ -1,15 +1,9 @@
 ---
-title: "Kratki pomostowe i profile z żywic epoksydowych"
+title: "Kraty pomostowe z żywic epoksydowych wzmacnianych włóknem szklanym TWS, GPR"
 layout: doc
 ---
-Zobacz szczegóły naszej oferty dot. krat pomostowych:
 
-* [Kraty antystatyczne](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/kraty.antystatyczne.docx),
-* [Kraty o wysokiej odporności chemicznej](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/kraty.wysoka.odpornosc.docx),
-* [Kraty o wysokiej odporności UW](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/kraty.odpornosc.uv.docx),
-* [Kraty ogólnego przeznaczenia](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/kraty.ogolne.docx).
-
-<img src="https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/pomost.jpg" />
+### Kraty przewodzące/antystatyczne
 
 <strong>Kratki pomostowe i profile ANDREAS są wytwarzane zgodnie z oryginalną I opatentowaną technologią, opartą głównie na metodzie wtryskowej (RTM) i pultruzji (przeciągania włókna).</strong> Nowatorska technologa RTM polega na procesie wtrysku żywicy do formy wtryskowej, a włókna szklane są umieszczane w formie wtryskowej prostokątnie, co zapewnia wytrzymałość mechaniczną wyrobu końcowego:
 <ul>
@@ -19,6 +13,8 @@ Zobacz szczegóły naszej oferty dot. krat pomostowych:
 <li>Różne rodzaje żywic mogą być wtryskiwane do form, a są nimi między innymi poliestry, estry winylowe i żywice epoksydowe z dodatkiem katalizatorów.</li>
 </ul>
 Technologia RTM pozwala na projektowanie specjalnych kratek różnych typów, o różnych podziałkach, wysokości, kształtu. Zapewnia produkcję kratek krytych jednostronnie, dwustronnie. Pozwala na produkcję dużych serii wyrobów, jak też wyrobów jednostkowych. Obróbka końcowa kratek polega na ich szlifowaniu oraz na malowaniu.
+
+<img src="https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/pomost.jpg" />
 
 <strong>Firma ANDREAS dostarcza swoje kratki w wymiarach (cięcie liniowe, ciecie po krzywej) według życzeń klienta, jak również profile produkowane metodą przeciągania włókna (pultruzji).</strong> Pultruzja łączy w sobie proces "ciągnienia" oraz "wytłaczania", co oznacza "wytłaczanie przez ciągnienie" - jest to proces ciągły stosowany do produkcji profilów z polimerów wzmacnianych włóknem, które to włókno jest perfekcyjnie ułożone w formie prze procesem polimeryzacji. Profil wykonane metodą pultruzji stosowane są do budowy konstrukcji z TWS takich jak przejścia, barierki, drabinki, które mogą być wstępnie zmontowane u nas w fabryce przed wysyłką do klienta.
 
@@ -31,3 +27,4 @@ Kratki są dostarczane w postaci monolitycznych paneli, tak, że mogą być swob
 
 <span style="font-weight: bold;">Firma nie dysponuje cennikami, bo do każdego zapytania trzeba podejść indywidualnie. Zapraszamy do kontaktu!</span>
 
+[Zobacz dodatkowe materiały na temat krat antystatycznych](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/kraty.antystatyczne.docx)
