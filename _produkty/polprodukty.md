@@ -1,6 +1,6 @@
 ---
 title: "Półprodukty z tworzyw sztucznych"
-layout: doc
+layout: produkt
 ---
 Oferujemy szeroką gamę półproduktów takich jak: wałki, profile, płyty, drut spawalniczy.
 

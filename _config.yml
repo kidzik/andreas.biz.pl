@@ -32,6 +32,7 @@ collections:
     permalink: /:collection/:name
   produkty:
     _hide_content: false
+    layout: produkt
     output: true
     permalink: /:collection/:name
   staff_members:

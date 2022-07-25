@@ -12,7 +12,8 @@ Rurociągi dla potrzeb wodociągów i gazownictwa.
 
 Przejścia szczelne, kołnierze, uchwyty do rur.
 
-<img src="https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/logos/raccord-plast.png" style="width: 100px; margin-right: 10px;" /> <img src="https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/logos/simona.png" style="width: 150px; position: relative; top: -30px;" /> 
+<a href="https://www.praher-plastics.com/"><img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/praher.jpg" class="logo"></a>
+<a href="http://www.simona.de/"><img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/simona.png" class="logo"></a>
 
 [Cennik RACCORD PLAST 2020](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/raccordplast-cennik-2020.pdf)
 

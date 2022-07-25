@@ -1,6 +1,6 @@
 ---
 title: "Stopnie schodowe"
-layout: doc
+layout: produkt
 ---
 
 ANDREAS dostarcza kraty wycięte do rozmiarów idealnie dopasowanych na proste, anty-poślizgowe schody. 

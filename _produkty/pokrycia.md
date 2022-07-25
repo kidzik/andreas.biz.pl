@@ -1,6 +1,6 @@
 ---
 title: "Pokrycia kanalów kanalizacyjnych i studzienek drenażowych"
-layout: doc
+layout: produkt
 ---
 
 ANDREAS oferuje pokrycia z tworzyw sztuczne wzmacniane włóknem szklanym. Produkt idealnie nadaje się do pokrywania studzienek drenażowych i kanałów kanalizacyjnych środowiskach o zarówno niskim jak i wysokim napięciu. Wszystkie materiały są certyfikowane i zatwierdzone przez Enel. Materiały zostały także przetestowane i zaakceptowane zgodnie z głównymi standardami europejskimi. Dzięki własnościom chemicznym i fizycznym tworzyw sztucznych wzmacnianych włóknem szklanym, nasze pokrycia zapewniają doskonałą izolację elektryczną, wysoką mechaniczną wytrzymałość. Produkty wykonane w naszej technologii są bardzo lekkie, dzięki czemu są też bardzo łatwe w montażu.

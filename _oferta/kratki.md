@@ -1,7 +1,8 @@
 ---
-title: "Kraty pomostowe z żywic epoksydowych wzmacnianych włóknem szklanym TWS, GPR"
+title: "Kraty pomostowe z żywic epoksydowych wzmacnianych włóknem szklanym TWS, GRP"
 layout: doc
 ---
+<a href="https://www.mmgrigliati.com/"><img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/mm.png" class="logo"></a>
 ### Produkty
 <ul>
 {% for product in site.produkty %}

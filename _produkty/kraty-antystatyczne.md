@@ -1,6 +1,6 @@
 ---
 title: "Kraty przewodzące/antystatyczne"
-layout: doc
+layout: produkt
 ---
 
 <strong>Kratki pomostowe i profile ANDREAS są wytwarzane zgodnie z oryginalną I opatentowaną technologią, opartą głównie na metodzie wtryskowej (RTM) i pultruzji (przeciągania włókna).</strong> Nowatorska technologa RTM polega na procesie wtrysku żywicy do formy wtryskowej, a włókna szklane są umieszczane w formie wtryskowej prostokątnie, co zapewnia wytrzymałość mechaniczną wyrobu końcowego:

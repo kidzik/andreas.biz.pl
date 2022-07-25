@@ -1,6 +1,6 @@
 ---
 title: "Kładki i pomosty"
-layout: doc
+layout: produkt
 ---
 
 ### Pomosty dla przystani pornowych, mola nadmorskie

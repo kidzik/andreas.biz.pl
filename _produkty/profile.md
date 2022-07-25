@@ -1,6 +1,6 @@
 ---
 title: "Profile kompozytowe z TWS"
-layout: doc
+layout: produkt
 ---
 
 Profile kompozytowe tworzone są wg tak zwanej technologii kompozytowej, używając płyt o szerokości 6 metrów w jasnych kolorach (standardowo żółty lub szary, choć możemy także wyprodukować profile w innych kolorach). Wykorzystujemy różnego rodzaju żywice (isophthalic bisphenolic, vinylester, odporne na płómienie, jak również inne żywice). Każdy typ profilu kompozytowego ma inne zastosowanie.

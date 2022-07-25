@@ -1,6 +1,6 @@
 ---
 title: "Kraty ogólnego przeznaczenia"
-layout: doc
+layout: produkt
 ---
 
 Kratki ANDREAS z żywicy wzmacnianej  włóknem szklanym  są wytwarzane według technologii formowania wtryskowego i są dostarczane  w różnych rozmiarach, w celu zapewnienia idealnego dopasowania do  różnych problemów montażowych. Składają się one z monolitycznych płyt, które są bardzo proste i szybkie w montażu.

@@ -1,6 +1,6 @@
 ---
 title: "Akcesoria do krat pomostowych"
-layout: doc
+layout: produkt
 ---
 
 Firma ANDREAS oferuje akcesoria ze stali nierdzewnej do łczenia krat.
