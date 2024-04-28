@@ -16,7 +16,7 @@ Oferujemy aramturę przemysłową z PVC, PP, PVDF. Oferta obejmuje:
 * armaturę automatyczną,
 * armatura specjalna.
 
-Jesteśmy przedstawicielami i partnerami w Polsce firm PRAHER, ASV STUBBE oferujących m.in.:
+Jesteśmy przedstawicielami i partnerami w Polsce firm PRAHER, ASV STUBBE i SAFI oferujących m.in.:
 
 * zawory kulowe, zwrotne, grzybkowe,
 * zasuwy klinowe, zasuwy nożowe,
