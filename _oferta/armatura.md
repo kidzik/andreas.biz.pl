@@ -30,6 +30,7 @@ Jesteśmy przedstawicielami i partnerami w Polsce firm PRAHER, ASV STUBBE oferuj
 <div style="text-align: center">
 <a href="https://www.praher-plastics.com/"><img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/praher.jpg" class="logo"></a>
 <a href="https://www.asvstubbe.it/"><img src="https://andreas-biz-pl.s3.eu-west-1.amazonaws.com/logos/asv_stubbe.png" class="logo"></a>
+<a href="https://www.safi-valves.com/"><img src="https://www.safi-valves.com/" class="logo"></a>
 </div>
 
 [Cennik armatura PRAHER 2020](https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/documents/praher-cennik-2019.pdf)
