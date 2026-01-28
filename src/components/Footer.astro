@@ -1,0 +1,38 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-800 text-white py-12 mt-auto">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-lg font-semibold mb-4">ANDREAS</h3>
+        <p class="text-gray-400">
+          Kompleksowe podejście do instalacji przemysłowych
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Nawigacja</h3>
+        <ul class="space-y-2">
+          <li><a href="/oferta/" class="text-gray-400 hover:text-white">Oferta</a></li>
+          <li><a href="/o-firmie/" class="text-gray-400 hover:text-white">O firmie</a></li>
+          <li><a href="/kontakt/" class="text-gray-400 hover:text-white">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>Tel: 692 301 340</li>
+          <li>Email: <a href="mailto:biuro@andreas.biz.pl" class="hover:text-white">biuro@andreas.biz.pl</a></li>
+          <li>ul. Skłodowskiej-Curie 7 lokal 50<br />08-300 Sokołów Podlaski</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+      <p>&copy; {currentYear} ANDREAS. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </div>
+</footer>

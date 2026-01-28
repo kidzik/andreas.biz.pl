@@ -1,0 +1,73 @@
+---
+const navItems = [
+  { name: 'Oferta', link: '/oferta/' },
+  { name: 'O firmie', link: '/o-firmie/' },
+  { name: 'Kontakt', link: '/kontakt/' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold text-blue-600 hover:no-underline">
+      ANDREAS
+    </a>
+
+    <!-- Mobile menu button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 rounded hover:bg-gray-100"
+      aria-label="Toggle menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Desktop navigation -->
+    <ul class="hidden md:flex space-x-8">
+      {navItems.map(item => (
+        <li>
+          <a
+            href={item.link}
+            class:list={[
+              "text-gray-700 hover:text-blue-600 transition-colors hover:no-underline",
+              { "text-blue-600 font-semibold": currentPath.startsWith(item.link) }
+            ]}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <!-- Mobile navigation -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <ul class="px-4 py-2 space-y-2">
+      {navItems.map(item => (
+        <li>
+          <a
+            href={item.link}
+            class:list={[
+              "block py-2 text-gray-700 hover:text-blue-600 hover:no-underline",
+              { "text-blue-600 font-semibold": currentPath.startsWith(item.link) }
+            ]}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

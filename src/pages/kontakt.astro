@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const mapData = {
+  latitude: 52.409089,
+  longitude: 22.231791,
+  address: "ul. Skłodowskiej-Curie 7 lokal 50, 08-300 Sokołów Podlaski, Polska",
+  zoom: 13
+};
+
+const simpleFormToken = import.meta.env.SIMPLEFORM_API_TOKEN;
+const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+---
+
+<Layout title="Kontakt - ANDREAS" description="Skontaktuj się z nami. Telefon: 692 301 340, Email: biuro@andreas.biz.pl">
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Skontaktuj się z nami już teraz</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Z przyjemnością pomożemy Ci zrealizować Twój projekt.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div>
+          <form
+            action={`https://getsimpleform.com/messages?form_api_token=${simpleFormToken}`}
+            method="POST"
+            class="space-y-6"
+          >
+            <input type="hidden" name="redirect_to" value="https://andreas.biz.pl/kontakt-sukces/" />
+
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                Imię i nazwisko
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Wpisz swoje imię..."
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                Adres email *
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Podaj swój e-mail..."
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                Wiadomość
+              </label>
+              <textarea
+                name="text"
+                id="message"
+                rows="5"
+                placeholder="Wpisz wiadomość..."
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Wyślij wiadomość
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Telefon</h3>
+            <p class="text-3xl font-bold text-blue-600">692 301 340</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Adres</h3>
+            <a
+              href={`https://www.google.com/maps/place/${encodeURIComponent(mapData.address)}`}
+              target="_blank"
+              rel="noopener"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              ul. Skłodowskiej-Curie 7 lokal 50<br />
+              08-300 Sokołów Podlaski<br />
+              Polska
+            </a>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">E-mail</h3>
+            <a href="mailto:biuro@andreas.biz.pl" class="text-blue-600 text-lg">
+              biuro@andreas.biz.pl
+            </a>
+          </div>
+
+          <!-- Map -->
+          <div class="mt-8">
+            <div id="map" class="h-64 bg-gray-200 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script define:vars={{ mapData, googleMapsApiKey }}>
+  window.mapData = mapData;
+
+  function initMap() {
+    const myOptions = {
+      scrollwheel: false,
+      draggable: true,
+      disableDefaultUI: false,
+      zoom: window.mapData.zoom,
+      center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    const map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+    new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+    });
+  }
+
+  // Load Google Maps
+  if (typeof google === 'undefined') {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap`;
+    script.async = true;
+    script.defer = true;
+    window.initMap = initMap;
+    document.head.appendChild(script);
+  }
+</script>

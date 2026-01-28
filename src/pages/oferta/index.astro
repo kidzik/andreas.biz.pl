@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const offers = [
+  {
+    title: "Kraty pomostowe z TWS",
+    description: "Kraty pomostowe z żywic epoksydowych wzmacnianych włóknem szklanym TWS, GRP",
+    link: "/oferta/kratki/",
+    image: "https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/grating.jpg"
+  },
+  {
+    title: "Armatura z tworzyw sztucznych",
+    description: "Armatura przemysłowa z PVC, PP, PVDF - zawory, przepustnice, filtry i więcej",
+    link: "/oferta/armatura/",
+    image: "https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/praher.png"
+  },
+  {
+    title: "Instalacje przemysłowe",
+    description: "Instalacje przemysłowe z tworzyw sztucznych - rury, kształtki, prefabrykaty",
+    link: "/oferta/instalacje/",
+    image: "https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/fittings.jpg"
+  }
+];
+---
+
+<Layout title="Oferta - ANDREAS">
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-800 mb-8">Nasza oferta</h1>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {offers.map(offer => (
+          <a href={offer.link} class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow hover:no-underline">
+            <div class="aspect-video bg-gray-100">
+              <img src={offer.image} alt={offer.title} class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h2 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                {offer.title}
+              </h2>
+              <p class="text-gray-600">
+                {offer.description}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,39 @@
+---
+import OfertaLayout from '../../layouts/OfertaLayout.astro';
+
+const products = [
+  { name: "Kładki i pomosty", slug: "kraty-pomostowe" },
+  { name: "Kraty przewodzące/antystatyczne", slug: "kraty-antystatyczne" },
+  { name: "Kraty ogólnego przeznaczenia", slug: "kraty-ogolne" },
+  { name: "Odporność krat", slug: "kraty-odpornosc" },
+  { name: "Akcesoria do krat", slug: "kraty-pomostowe-akcesoria" },
+  { name: "Profile kompozytowe z TWS", slug: "profile" },
+  { name: "Bramy wjazdowe z TWS", slug: "bramy" },
+  { name: "Ogrodzenia z TWS", slug: "ogrodzenia" },
+  { name: "Pokrycia kanałów", slug: "pokrycia" },
+  { name: "Poręcze i balustrady", slug: "porecze-balustrady" },
+  { name: "Płyty", slug: "plyty" },
+  { name: "Pokrywy", slug: "pokrywy" },
+  { name: "Stopnie schodowe", slug: "stopnie-schodowe" },
+  { name: "Półprodukty", slug: "polprodukty" },
+];
+---
+
+<OfertaLayout title="Kraty pomostowe z żywic epoksydowych wzmacnianych włóknem szklanym TWS, GRP">
+  <div class="mb-8">
+    <a href="https://www.mmgrigliati.com/" target="_blank" rel="noopener">
+      <img src="https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/logos/mm.png" alt="MM Grigliati" class="h-16" />
+    </a>
+  </div>
+
+  <h3>Produkty</h3>
+  <ul class="space-y-2">
+    {products.map(product => (
+      <li>
+        <a href={`/produkty/${product.slug}/`} class="text-lg hover:text-blue-700">
+          {product.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</OfertaLayout>

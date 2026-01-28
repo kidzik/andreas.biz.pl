@@ -1,0 +1,29 @@
+---
+import Layout from './Layout.astro';
+import OfertaSidebar from '../components/OfertaSidebar.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Layout title={`${title} - ANDREAS`} description={description}>
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-1 order-2 md:order-1">
+          <OfertaSidebar />
+        </div>
+        <div class="md:col-span-3 order-1 md:order-2">
+          <h1 class="text-3xl font-bold text-gray-800 mb-6">{title}</h1>
+          <div class="prose max-w-none">
+            <slot />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

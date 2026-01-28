@@ -1,0 +1,44 @@
+---
+const currentPath = Astro.url.pathname;
+
+const offerLinks = [
+  { name: "Kraty pomostowe z TWS", link: "/oferta/kratki/" },
+  { name: "Armatura z tworzyw sztucznych", link: "/oferta/armatura/" },
+  { name: "Instalacje przemysłowe", link: "/oferta/instalacje/" },
+];
+---
+
+<aside class="bg-gray-50 rounded-lg p-6">
+  <h3 class="text-lg font-bold text-gray-800 mb-4">Oferta</h3>
+  <nav>
+    <ul class="space-y-2">
+      {offerLinks.map(item => (
+        <li>
+          <a
+            href={item.link}
+            class:list={[
+              "block py-2 px-3 rounded transition-colors hover:no-underline",
+              currentPath === item.link
+                ? "bg-blue-600 text-white"
+                : "text-gray-600 hover:bg-gray-200"
+            ]}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="mt-8 pt-6 border-t border-gray-200">
+    <h4 class="font-semibold text-gray-800 mb-2">Kontakt</h4>
+    <p class="text-gray-600 text-sm mb-2">
+      <strong>Andrzej Kidziński</strong><br />
+      Prezes firmy Andreas
+    </p>
+    <p class="text-gray-600 text-sm">
+      Tel: <a href="tel:692301340" class="text-blue-600">692 301 340</a><br />
+      Email: <a href="mailto:biuro@andreas.biz.pl" class="text-blue-600">biuro@andreas.biz.pl</a>
+    </p>
+  </div>
+</aside>

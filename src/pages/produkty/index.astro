@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const products = [
+  { name: "Kładki i pomosty", slug: "kraty-pomostowe", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/mm_photos/20150706_120408.jpg" },
+  { name: "Kraty przewodzące/antystatyczne", slug: "kraty-antystatyczne", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/pomost.jpg" },
+  { name: "Kraty ogólnego przeznaczenia", slug: "kraty-ogolne", image: "https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/grating.jpg" },
+  { name: "Kraty o wysokiej odporności", slug: "kraty-odpornosc", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/mm_photos/resistance1.jpg" },
+  { name: "Akcesoria do krat", slug: "kraty-pomostowe-akcesoria", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/akcesoria1.jpg" },
+  { name: "Profile kompozytowe", slug: "profile", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/profile1.jpg" },
+  { name: "Bramy wjazdowe", slug: "bramy", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/bramy1.jpg" },
+  { name: "Ogrodzenia", slug: "ogrodzenia", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/ogrodzenia1.jpg" },
+  { name: "Pokrycia kanałów", slug: "pokrycia", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/pokrycia.jpg" },
+  { name: "Poręcze i balustrady", slug: "porecze-balustrady", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/porecze.jpg" },
+  { name: "Płyty laminowane", slug: "plyty", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/plyty1.jpg" },
+  { name: "Pokrywy studzienek", slug: "pokrywy", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/pokrywy.jpg" },
+  { name: "Stopnie schodowe", slug: "stopnie-schodowe", image: "https://andreas-biz-pl.s3-eu-west-1.amazonaws.com/images/schody.jpg" },
+  { name: "Półprodukty", slug: "polprodukty", image: "https://s3-eu-west-1.amazonaws.com/andreas-biz-pl/images/fittings.jpg" },
+];
+---
+
+<Layout title="Produkty - ANDREAS">
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-800 mb-8">Nasze produkty</h1>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {products.map(product => (
+          <a href={`/produkty/${product.slug}/`} class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow hover:no-underline">
+            <div class="aspect-video bg-gray-100">
+              <img src={product.image} alt={product.name} class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h2 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                {product.name}
+              </h2>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
