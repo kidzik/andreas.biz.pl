@@ -1,15 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const mapData = {
-  latitude: 52.409089,
-  longitude: 22.231791,
-  address: "ul. Skłodowskiej-Curie 7 lokal 50, 08-300 Sokołów Podlaski, Polska",
-  zoom: 13
-};
-
-const simpleFormToken = import.meta.env.SIMPLEFORM_API_TOKEN;
-const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.5!2d22.231791!3d52.409089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDI0JzMyLjciTiAyMsKwMTMnNTQuNCJF!5e0!3m2!1spl!2spl!4v1699999999999!5m2!1spl!2spl";
+const mapAddress = "ul. Skłodowskiej-Curie 7 lokal 50, 08-300 Sokołów Podlaski, Polska";
 ---
 
 <Layout title="Kontakt - ANDREAS" description="Skontaktuj się z nami. Telefon: 692 301 340, Email: biuro@andreas.biz.pl">
@@ -23,13 +16,7 @@ const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
       <div class="grid md:grid-cols-2 gap-12">
         <!-- Contact Form -->
         <div>
-          <form
-            action={`https://getsimpleform.com/messages?form_api_token=${simpleFormToken}`}
-            method="POST"
-            class="space-y-6"
-          >
-            <input type="hidden" name="redirect_to" value="https://andreas.biz.pl/kontakt-sukces/" />
-
+          <form id="contact-form" class="space-y-6">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                 Imię i nazwisko
@@ -62,7 +49,7 @@ const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
                 Wiadomość
               </label>
               <textarea
-                name="text"
+                name="message"
                 id="message"
                 rows="5"
                 placeholder="Wpisz wiadomość..."
@@ -89,7 +76,7 @@ const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
           <div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Adres</h3>
             <a
-              href={`https://www.google.com/maps/place/${encodeURIComponent(mapData.address)}`}
+              href={`https://www.google.com/maps/place/${encodeURIComponent(mapAddress)}`}
               target="_blank"
               rel="noopener"
               class="text-gray-600 hover:text-blue-600"
@@ -107,9 +94,16 @@ const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
             </a>
           </div>
 
-          <!-- Map -->
+          <!-- Map (embedded iframe - no API key needed) -->
           <div class="mt-8">
-            <div id="map" class="h-64 bg-gray-200 rounded-lg"></div>
+            <iframe
+              src={mapEmbedUrl}
+              class="w-full h-64 rounded-lg border-0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa lokalizacji ANDREAS"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -117,34 +111,19 @@ const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
   </section>
 </Layout>
 
-<script define:vars={{ mapData, googleMapsApiKey }}>
-  window.mapData = mapData;
-
-  function initMap() {
-    const myOptions = {
-      scrollwheel: false,
-      draggable: true,
-      disableDefaultUI: false,
-      zoom: window.mapData.zoom,
-      center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    const map = new google.maps.Map(document.getElementById("map"), myOptions);
-
-    new google.maps.Marker({
-      map: map,
-      position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-    });
-  }
-
-  // Load Google Maps
-  if (typeof google === 'undefined') {
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap`;
-    script.async = true;
-    script.defer = true;
-    window.initMap = initMap;
-    document.head.appendChild(script);
-  }
+<script>
+  // Simple mailto: form handler
+  document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = e.target as HTMLFormElement;
+    const name = (form.querySelector('#name') as HTMLInputElement)?.value || '';
+    const email = (form.querySelector('#email') as HTMLInputElement)?.value || '';
+    const message = (form.querySelector('#message') as HTMLTextAreaElement)?.value || '';
+    
+    const subject = encodeURIComponent(`Wiadomość ze strony od ${name}`);
+    const body = encodeURIComponent(`Imię: ${name}\nEmail: ${email}\n\nWiadomość:\n${message}`);
+    
+    window.location.href = `mailto:biuro@andreas.biz.pl?subject=${subject}&body=${body}`;
+  });
 </script>
